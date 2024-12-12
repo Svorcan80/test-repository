@@ -1,0 +1,123 @@
+Quantitative Research Steps/Phases:
+
+1. Planing 2. Design 3. Sample selection 4. Implementation 5. Data Analysis 6. Reporting 
+Confidence level:  A 95% confidence level means that if we were to repeat an experiment or survey many times, 95% of the time, the calculated confidence intervals would contain the true population parameter (like the mean). 
+In practical terms:
+If we calculate a 95% confidence interval around a sample mean (e.g., an average age or test score), it means we are 95% confident that this interval includes the true mean of the entire population.
+For instance, if we surveyed a sample and found that the average test score was 75 with a 95% confidence interval of [70, 80], we’re saying there’s a 95% chance that the actual average score for the entire population falls between 70 and 80. 
+A 95% confidence level reflects a balance between confidence and precision. Researchers often choose it because it provides strong reliability while keeping intervals reasonably narrow.
+
+
+Scales: 
+Nominal Scale: Categorical data without any inherent order. Examples: Gender, race, marital status. 
+Ordinal Scale: Categorical data with a clear, ranked order, but without consistent intervals between ranks. Examples: Likert scale responses (e.g., strongly agree to strongly disagree), education levels. 
+Interval Scale: Numeric data with equal intervals between values but no true zero point. Examples: Temperature in Celsius, IQ scores.
+
+
+In the realm of data analysis, understanding the distinctions between nominal, ordinal, and interval data is fundamental, as each serves a unique purpose and requires specific methods of analysis.   Nominal data refers to categorical data without any inherent order. This type of data comprises distinct categories that cannot be quantitatively compared. For instance, if a researcher conducts a survey on favorite fruits, the responses might include categories such as "apple," "banana," and "cherry." The main characteristic of nominal data is that it allows for the classification of observations but does not imply any sort of ranking or quantitative measure.  Ordinal data involves categories that exhibit a clear order or ranking, yet the intervals between the ranks are not measurable or consistent. A prime example of ordinal data is a customer satisfaction survey where ratings are given as "very satisfied," "satisfied," "neutral," "dissatisfied," and "very dissatisfied." Although these responses can be ranked from best to worst, the exact difference in satisfaction levels between these categories is unknown, which distinguishes ordinal from interval data.  Interval data, on the other hand, contains ordered categories with equal intervals between values, allowing for meaningful calculations and comparisons. This data type is often associated with continuous measurements such as temperature or time. A typical example is the Celsius or Fahrenheit temperature scale, where the difference between 20°C and 30°C is the same as between 30°C and 40°C, thus enabling a precise analysis of variations in temperature.  In summary, the choice between nominal, ordinal, and interval data hinges on the nature of the information being measured. For purely categorical information without any order, nominal data is appropriate. When the data can be ranked but lacks consistent intervals, ordinal data should be employed. In instances where both order and equal intervals are essential, interval data will serve best. Understanding these distinctions ensures that data is analyzed appropriately, leading to more accurate insights and conclusions. Through the application of valid examples and continuous peer review of our understandings, we can solidify our grasp of these concepts before proceeding to more advanced topics in data analysis.   
+Different types of analysis:
+
+Descriptive Analysis, describing the data, what is essential to analysis and what is the dispersion of the answers. 
+Association Analysis, understanding the relationship between the variables. 
+Inferential Analysis, comparing results to overall population. 
+Causal Analysis, how independent variables affect dependent variables.
+
+
+Descriptive Analysis – Values:  The Mean – dimension of central tendency
+Dispersion – amount of variation between data points
+
+Association Analysis:
+Comparing two groups of people (sample statistic - statistically significant difference and Chi quadrate – used for nominal data)
+
+In association analysis, comparing two groups involves testing whether there’s a statistically significant association between categorical variables. Here are examples that use chi-square tests to check associations:
+
+Example 1: Association between Gender and Product Preference
+Objective: Test if there is an association between gender (male/female) and product preference (Product A/Product B).
+Data: 100 participants, with their gender and preferred product.
+Chi-Square Test: Use a chi-square test for independence to determine if gender influences product preference.
+Interpretation: A statistically significant result (p < 0.05) suggests that gender is associated with product preference.
+  Correlation analysis:
+It can help you see relationships such as relationship between unit pricing and unit sales.
+It is defined through correlation coefficient, it can help you identify if two variables are correlated.
+
+Example:
+Suppose you want to investigate whether there’s a relationship between the number of hours people study and their test scores. Here’s a sample dataset for five people:
+
+| Person | Hours Studied (X) | Test Score (Y) |
+|--------|--------------------|----------------|
+| 1    		  | 2        			         | 50         
+| 2    	  | 3            			 | 55           
+| 3    	  | 5             			 | 65           
+| 4    	  | 7      			         | 70            
+| 5    	  | 8            			 | 85            
+
+To measure the strength and direction of this relationship, you can calculate the correlation coefficient \( r \), which ranges between -1 and 1:
+
+- \( r = 1 \): strong positive relationship (as X increases, Y also increases)
+- \( r = -1 \): strong negative relationship (as X increases, Y decreases)
+- \( r = 0 \): no relationship
+
+If you work through this calculation, you’ll find \( r \) is approximately 0.9, indicating a strong positive correlation—more study hours are associated with higher test scores.
+
+Causal Analysis:
+Causal analysis which can tell you if one thing, like spending on advertising, is affecting another thing like your sales number.
+
+Errors:
+Errors are normal distributed – gaussian curve
+When we say that errors (or residuals) are normally distributed, it means that, in a statistical model, the errors follow a bell-shaped curve (a normal distribution). Most of the errors are close to zero, meaning predictions are usually close to the actual values, with fewer errors that are far from zero. 
+In a normal distribution:
+Small errors (close to zero) are most common.
+Larger errors (far from zero) happen less often.
+The errors are evenly spread on both sides of zero, so there’s no consistent bias in one direction. 
+Why it matters: Many statistical tests assume that the errors are normally distributed. If this assumption holds, it helps make confidence intervals, significance tests, and other results from the model more accurate and reliable.
+
+Homoscedasticity means that the spread of errors (or residuals) in a statistical model is even across all values of the independent variable. In other words, the size of the errors stays the same, no matter what the value of the independent variable is. Example in simple linear regression: If a model is homoscedastic, the errors will be consistently spread out across the predicted values. The opposite of this is heteroscedasticity, where the error spread changes—like errors being bigger at higher values of the independent variable than at lower ones.
+
+If there is **no autocorrelation between errors**, it means that the errors (or residuals) in a statistical model are **independent of each other**. In other words, the error for one observation doesn’t depend on or predict the error for another observation.
+
+In practical terms:
+- **No patterns** exist in the errors. For example, if one error is positive, this doesn’t mean that the next error is more likely to be positive (or negative).
+- Each error term is a separate “random” value and is not linked to previous errors.
+
+**Why it matters**: Many statistical models assume that errors are not correlated. If errors are autocorrelated (often seen in time series data where errors might follow trends or cycles), it can lead to misleading statistical results and underestimations of errors. 
+
+Multiple variables:
+
+Regression Analysis:
+
+Regression analysis is a statistical method for studying and modeling the relationship between a dependent variable (target) and one or more independent variables (predictors). It’s used to make predictions, quantify relationships, and understand how changes in predictors affect the target variable.
+
+**What Regression Analysis Does:**
+- **Creates Predictions**: Estimates values of the target variable based on new data points for the predictors.
+- **Identifies Relationships**: Detects and quantifies how much each independent variable influences the target variable.
+- **Understands Associations**: Analyzes the strength and direction of the impact of one variable on another.
+
+**Examples:**
+1. **Linear Regression**: Models the relationship between a dependent variable and one or more independent variables with a straight line. Example: Forecasting sales based on advertising budget.
+2. **Logistic Regression**: Used for binary target variables (e.g., success/failure). Example: Predicting whether a customer will repay a loan.
+3. **Multiple Regression**: An extension of linear regression with multiple predictors. Example: Predicting property prices based on area, location, and condition.
+4. **Polynomial Regression**: Fits a polynomial function to data when the relationship is not linear. Example: Modeling bacterial growth rates over time.
+
+Regression is widely applied in fields like financial analysis, medicine, sociology, and machine learning, where quantitative predictions or insights into relationships are essential.
+
+Cluster Analysis:
+
+K-Means Clustering will essentially provide you with the groups or clusters of customers who are similar along the attributes that you're asking the K-means cluster to run on. And this way, you obtain cluster membership for each of the individuals in your dataset.
+
+Conjoint Analysis:
+
+„looking at how consumers trade-off between the different product attributes that they might consider when they're making a purchase in a particular category.”
+
+Conjoint analysis is a research method used to understand how people make decisions when they are presented with different options. It helps to find out what features or aspects of a product or service are most important to customers and how much they are willing to pay for those features.
+
+How it works: In conjoint analysis, people are given different choices with varying features and are asked to choose their preferred option. By analyzing these choices, businesses can see which features have the biggest impact on decisions.
+
+Examples:
+
+1. **Smartphone Choice**: Suppose a company wants to know which smartphone features customers care about most (e.g., camera quality, battery life, screen size, price). They create different options, mixing these features (like a high-end camera but medium battery life). Customers choose their favorites, and the company learns which features matter most.
+
+2. **Vacation Packages**: A travel agency wants to understand what customers prioritize when booking vacations (e.g., location, hotel quality, activities, price). By showing various packages with different combinations of these elements, the agency can identify which aspects are most attractive to different customer groups.
+
+3. **Car Design**: An auto manufacturer might use conjoint analysis to see if buyers prefer a car with fuel efficiency, horsepower, safety features, or luxury interiors. Different versions are shown, each combining these features differently, and customers select their preferred models. This helps the manufacturer understand which features to focus on for new models.
+
+Conjoint analysis is widely used in marketing, product design, and service improvements because it provides a clear view of customer preferences and trade-offs.
